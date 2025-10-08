@@ -504,7 +504,7 @@ main() {
     cd gcp-bot
     
     log "Building container image..."
-    if ! gcloud builds submit --tag gcr.io/${PROJECT_ID}/gcp-bot-image --quiet; then
+    if ! gcloud builds submit --tag gcr.io/${PROJECT_ID}/gcp-v2ray-image --quiet; then
         error "Build failed"
         exit 1
     fi
