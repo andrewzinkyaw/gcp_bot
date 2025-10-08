@@ -605,7 +605,7 @@ main() {
     
     log "Deploying to Cloud Run..."
     if ! gcloud run deploy ${SERVICE_NAME} \
-        --image gcr.io/${PROJECT_ID}/gcp-bot-image \
+        --image gcr.io/${PROJECT_ID}/gcp-v2ray-image \
         --platform managed \
         --region ${REGION} \
         --allow-unauthenticated \
